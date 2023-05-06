@@ -1,0 +1,14 @@
+<p>frontpage works!</p>
+
+
+<div class="container">
+  <form [formGroup]="form">
+    <label for="">Exam ID</label>
+    <input type="text" class="form-control" formControlName="examid">
+    <label for="">user</label>
+    <input type="text" class="form-control" formControlName="examuser">
+    <button class="btn btn-success mt-2" type="button" [routerLink]="['start']" (click)="abc()">submit</button>
+    {{form.value|json}}
+  </form>
+</div>
+<router-outlet></router-outlet>

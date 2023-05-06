@@ -1,0 +1,9 @@
+<p>result works!</p>
+<div class="container">
+  <div *ngFor="let item of ans;let i = index">
+    <p>{{item.question}}</p>
+    <div>
+      <p [ngClass]="{'x':quedata[i].Answer.includes(item.answer)==false}">{{item.answer}}</p>
+    </div>
+  </div>
+</div>
